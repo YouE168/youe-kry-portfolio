@@ -5,10 +5,6 @@ A personal portfolio website showcasing my projects, skills, and experience as a
 ## 🌐 Live Demo
 [View Live Site](https://youe168.github.io/youe-kry-portfolio/)
 
-## 📱 Screenshots
-![Desktop View](screenshots/desktop-home.png)
-![Mobile View](screenshots/mobile-view.png)
-
 ## 🛠️ Built With
 - HTML5
 - CSS3
