@@ -5,22 +5,16 @@ A personal portfolio website showcasing my projects, skills, and experience as a
 ## 🌐 Live Demo
 [View Live Site](https://youe168.github.io/youe-kry-portfolio/)
 
-## 📱 Screenshots
-![Desktop View](screenshots/desktop-home.png)
-![Mobile View](screenshots/mobile-view.png)
-
 ## 🛠️ Built With
 - HTML5
 - CSS3
 - JavaScript
-- [Add any other technologies you used]
 
 ## ✨ Features
 - Responsive design
 - Clean and modern UI
 - Interactive elements
 - Mobile-first approach
-- [Add specific features of your site]
 
 ## 🎯 Sections
 - **About** - Introduction and background
@@ -29,8 +23,8 @@ A personal portfolio website showcasing my projects, skills, and experience as a
 - **Contact** - Ways to reach me
 
 ## 📧 Contact
-- Email: [your-email@example.com]
-- LinkedIn: [Your LinkedIn Profile]
+- Email: kry.ue59@gmail.com
+- LinkedIn: https://www.linkedin.com/in/you-e-kry-96897126b/
 - GitHub: [@YouE168](https://github.com/YouE168)
 
 ## 🔧 Local Development
