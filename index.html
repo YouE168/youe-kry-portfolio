@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>You E Kry - Software Developer</title>
+    <title>You E Kry - Data Analyst &amp; Software Developer</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -13,6 +15,7 @@
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
+                <li><a href="#gallery">Gallery</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#experience">Experience</a></li>
@@ -21,42 +24,51 @@
         </nav>
     </header>
 
-    <section id="home" class="hero">
-        <canvas id="binaryCanvas"></canvas>
-        <div class="hero-content">
-            <img src="images/profile.jpg" alt="You E Kry" class="profile-image">
-            <h1>You E Kry</h1>
-            <p>Computer Science Student • Data Science Enthusiast • Future Web & App Developer</p>
-            <a href="#contact" class="cta-button">Let's Connect</a>
-        </div>
-    </section>
+<!-- ===== HERO ===== -->
+<section id="home" class="hero">
+    <canvas id="binaryCanvas"></canvas>
+    <div class="hero-content">
+        <img src="images/profile.jpg" alt="You E Kry" class="profile-image">
+        <h1>You E Kry</h1>
+        <p>Computer Science Student • Aspiring Data Analyst • Machine Learning &amp; Full-Stack Developer</p>
+        <a href="#contact" class="cta-button">Let's Connect</a>
+    </div>
+    <div class="scroll-indicator">
+        <span></span>
+    </div>
+</section>
 
+    <!-- ===== ABOUT ===== -->
     <section id="about" class="section-bg">
         <div class="container">
             <h2 class="fade-in">About Me</h2>
             <div class="about-content fade-in">
                 <div class="about-stats">
                     <div class="stat-card">
-                        <h3>3.8</h3>
+                        <div class="stat-icon">📊</div>
+                        <h3>3.85</h3>
                         <p>GPA</p>
                     </div>
                     <div class="stat-card">
+                        <div class="stat-icon">🎓</div>
                         <h3>2026</h3>
                         <p>Expected Graduation</p>
                     </div>
                     <div class="stat-card">
+                        <div class="stat-icon">🌏</div>
                         <h3>3</h3>
                         <p>Languages Spoken</p>
                     </div>
                     <div class="stat-card">
+                        <div class="stat-icon">💼</div>
                         <h3>5+</h3>
                         <p>Technical Roles</p>
                     </div>
                 </div>
-                <div>
-                    <p>I am a dedicated Computer Science student at Pittsburg State University with minors in Data Science and Information Systems, maintaining a 3.8 GPA. I work closely with both students and faculty as a tutor and computer lab assistant, providing technical support and academic assistance.</p>
+                <div class="about-text">
+                    <p>I am a dedicated Computer Science student at Pittsburg State University with minors in Data Science and Information Systems, maintaining a 3.85 GPA. I work closely with both students and faculty as a tutor and computer lab assistant, providing technical support and academic assistance.</p>
                     <br>
-                    <p>I am passionate about developing innovative software solutions and applying data science to real-world problems. My interests include machine learning, data analysis, and full-stack development. As a trilingual speaker of English, Khmer, and Chinese, I bring a global perspective to problem-solving and collaboration.</p>
+                    <p>I am passionate about turning data into decisions and applying data science to real-world problems. My interests include data analysis, machine learning, and full-stack development. As a trilingual speaker of English, Khmer, and Chinese, I bring a global perspective to problem-solving and collaboration.</p>
                     <br>
                     <p>I am currently seeking internship opportunities where I can apply my technical skills, contribute to meaningful projects, and continue learning from industry professionals.</p>
                 </div>
@@ -64,24 +76,136 @@
         </div>
     </section>
 
-    <section id="skills">
+    <!-- ===== PHOTO GALLERY ===== -->
+    <!--
+        HOW TO ADD MORE PHOTOS:
+        Add the image file to the images/ folder, then add a new .gallery-item div below,
+        pointing src at "images/<your filename>.png" (URL-encode spaces as %20).
+        Each item has a caption — update the <p> text to describe the event.
+    -->
+    <section id="gallery">
+        <div class="container">
+            <h2 class="fade-in">Moments &amp; Memories</h2>
+            <p class="section-subtitle fade-in">Events, conferences, and milestones along the journey</p>
+            <div class="gallery-grid fade-in">
+
+                <div class="gallery-item">
+                    <img src="images/Join%20DataFest%20Mid-MO%20Competition.png" alt="Join DataFest Mid-MO Competition" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <p>📍 DataFest Mid-MO Competition</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Attend%20the%20Kansas%20Leadership%20Center%20Session%201.png" alt="Kansas Leadership Center Session 1" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <p>📍 Kansas Leadership Center — Session 1</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Attend%20the%20Kansas%20Leadership%20Center%20Session%202.png" alt="Kansas Leadership Center Session 2" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <p>📍 Kansas Leadership Center — Session 2</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Internship%20Reception%20Spring%2026.png" alt="Internship Reception Spring 26" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <p>📍 Internship Reception — Spring 2026</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Golden%20Gorilla%20Award.png" alt="Golden Gorilla Award" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <p>📍 Golden Gorilla Award</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Internship%20Spring-%20Summer%202025%20Spotlight.png" alt="Internship Spring/Summer 2025 Spotlight" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <p>📍 Internship Spotlight — Spring/Summer 2025</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Internship%20Summer%202026%20Spotlight%201.png" alt="Internship Summer 2026 Spotlight 1" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <p>📍 Internship Spotlight — Summer 2026</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/Internship%20Summer%202026%20Spotlight%202.png" alt="Internship Summer 2026 Spotlight 2" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <p>📍 Internship Spotlight — Summer 2026</p>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="images/International%20Orientation%20Leader%20.png" alt="International Orientation Leader" onerror="this.parentElement.classList.add('placeholder')">
+                    <div class="gallery-overlay">
+                        <p>📍 International Orientation Leader</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SKILLS ===== -->
+    <section id="skills" class="section-bg">
         <div class="container">
             <h2 class="fade-in">Technical Skills</h2>
             <div class="skills-grid">
+
                 <div class="skill-category fade-in">
+                    <div class="skill-cat-icon">📊</div>
+                    <h3>Data &amp; Analytics</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Data Analysis</span>
+                        <span class="skill-tag">Data Visualization</span>
+                        <span class="skill-tag">Machine Learning</span>
+                        <span class="skill-tag">Recommendation Systems</span>
+                        <span class="skill-tag">Tableau</span>
+                        <span class="skill-tag">Software Testing</span>
+                        <span class="skill-tag">Debugging</span>
+                        <span class="skill-tag">Agile</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-cat-icon">🤖</div>
+                    <h3>Data Science &amp; ML Tools</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">NumPy</span>
+                        <span class="skill-tag">Pandas</span>
+                        <span class="skill-tag">Seaborn</span>
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Matplotlib</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <div class="skill-cat-icon">💻</div>
                     <h3>Programming Languages</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">Python</span>
-                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">SQL</span>
                         <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">Java</span>
+                        <span class="skill-tag">C</span>
                         <span class="skill-tag">HTML</span>
                         <span class="skill-tag">CSS</span>
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">C</span>
                     </div>
                 </div>
+
                 <div class="skill-category fade-in">
-                    <h3>Frameworks, Tools & Platforms</h3>
+                    <div class="skill-cat-icon">🛠️</div>
+                    <h3>Frameworks, Tools &amp; Platforms</h3>
                     <div class="skill-tags">
                         <span class="skill-tag">React</span>
                         <span class="skill-tag">Next.js</span>
@@ -92,110 +216,106 @@
                         <span class="skill-tag">LangChain</span>
                         <span class="skill-tag">Flutter</span>
                         <span class="skill-tag">Git</span>
-                        <span class="skill-tag">Database Management</span>
-                        <span class="skill-tag">ACCESS</span>
                         <span class="skill-tag">DB2</span>
+                        <span class="skill-tag">Microsoft Access</span>
                         <span class="skill-tag">Microsoft Office</span>
                     </div>
                 </div>
-                <div class="skill-category fade-in">
-                    <h3>Technical Proficiencies</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Data Analysis</span>
-                        <span class="skill-tag">recommendation Systems</span>
-                        <span class="skill-tag">Data Visualization</span>
-                        <span class="skill-tag">Machine Learning</span>
-                        <span class="skill-tag">Software Testing</span>
-                        <span class="skill-tag">Debugging</span>
-                        <span class="skill-tag">Agile Methodology</span>
-                        <span class="skill-tag">System Troubleshooting</span>                 
-                    </div>
-                </div>
-                <div class="skill-category fade-in">
-                    <h3>Data Science & Machine Learning Tools</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">NumPy</span>
-                        <span class="skill-tag">Pandas</span>
-                        <span class="skill-tag">Seaborn</span>
-                        <span class="skill-tag">Scikit-learn</span>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
 
-    <section id="projects" class="section-bg">
+    <!-- ===== PROJECTS ===== -->
+    <section id="projects">
         <div class="container">
             <h2 class="fade-in">Featured Projects</h2>
             <div class="projects-grid">
 
-                <div class="project-card fade-in">
+                <div class="project-card fade-in" data-color="#0ea5e9">
+                    <div class="project-glow"></div>
+                    <div class="project-icon">💰</div>
+                    <div class="project-header">
+                        <h3>Finlytic</h3>
+                        <p>AI-powered loan approval prediction &amp; analytics dashboard</p>
+                    </div>
+                    <div class="project-content">
+                        <p>Developed a fintech web app using Flask and Logistic Regression to predict loan approval with 86.18% accuracy, integrating real-time ML predictions, user authentication, and SQLite storage. Built a full ML pipeline (preprocessing, encoding, model comparison) and an interactive Chart.js dashboard visualizing approval trends and model performance.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">SQLite</span>
+                            <span class="tech-tag">Chart.js</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-color="#ef4444">
+                    <div class="project-glow"></div>
+                    <div class="project-icon">❤️</div>
+                    <div class="project-header">
+                        <h3>Heart Disease Prediction</h3>
+                        <p>Ensemble-based diagnostic prediction system</p>
+                    </div>
+                    <div class="project-content">
+                        <p>Built a machine learning model to predict heart disease risk using 13 clinical features. Achieved 100% accuracy using Random Forest, with evaluation through precision, recall, F1-score, and ROC curve analysis.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Scikit-learn</span>
+                            <span class="tech-tag">Random Forest</span>
+                            <span class="tech-tag">SVM</span>
+                            <span class="tech-tag">Data Visualization</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-color="#f59e0b">
+                    <div class="project-glow"></div>
+                    <div class="project-icon">📱</div>
+                    <div class="project-header">
+                        <h3>SMS Spam Detection</h3>
+                        <p>Machine learning text classification</p>
+                    </div>
+                    <div class="project-content">
+                        <p>Developed a system achieving 98.7% accuracy using ensemble methods with custom feature engineering, real-time prediction, and comprehensive performance analysis on 5,574+ messages.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Naive Bayes</span>
+                            <span class="tech-tag">SVM</span>
+                            <span class="tech-tag">Random Forest</span>
+                            <span class="tech-tag">Feature Engineering</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card fade-in" data-color="#d946ef">
+                    <div class="project-glow"></div>
+                    <div class="project-icon">🥗</div>
                     <div class="project-header">
                         <h3>NutriSmart</h3>
                         <p>AI-powered nutrition recommendation system</p>
                     </div>
                     <div class="project-content">
-                        <p>Built an AI-driven web application that provides personalized food recommendations based on health goals, dietary preferences, and allergies using Python and machine learning on USDA nutrition data. Developed a React/Next.js frontend with a FastAPI backend deployed via Docker and AWS, and integrated conversational AI using LangChain and Gemini models.</p>
+                        <p>Built an AI-driven web application that provides personalized food recommendations based on health goals, dietary preferences, and allergies using Python and machine learning on USDA nutrition data. Integrated conversational AI using LangChain and Gemini models.</p>
                         <div class="project-tech">
                             <span class="tech-tag">React.js</span>
                             <span class="tech-tag">FastAPI</span>
                             <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Next.js</span>
                             <span class="tech-tag">MongoDB</span>
                             <span class="tech-tag">Docker</span>
                             <span class="tech-tag">AWS</span>
                             <span class="tech-tag">LangChain</span>
-                            <span class="tech-tag">Data Analysis</span>
-                            <span class="tech-tag">Machine Learning</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <h3>Heart Disease Prediction Model</h3>
-                        <p>Ensemble-based diagnostic prediction system</p>
-                    </div>
-                    <div class="project-content">
-                        <p>Built a machine learning model to predict heart disease risk using clinical data with 13 features. Applied preprocessing, feature scaling, and multiple classification algorithms including Logistic Regression, Decision Tree, Random Forest, SVM, and KNN. Achieved 100% accuracy using the Random Forest classifier, with performance evaluated through precision, recall, F1-score, and ROC curve analysis.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">NumPy</span>
-                            <span class="tech-tag">Pandas</span>
-                            <span class="tech-tag">Matplotlib</span>
-                            <span class="tech-tag">Seaborn</span>
-                            <span class="tech-tag">Scikit-learn</span>
-                            <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">Data Visualization</span>
-                        </div>
-                    </div>
-                </div>
-                 
-                <div class="project-card fade-in">
-                    <div class="project-header">
-                        <h3>SMS Spam Detection</h3>
-                        <p>Machine learning-based text spam detection system</p>
-                    </div>
-                    <div class="project-content">
-                        <p>Developed a system achieving 98.7% accuracy using ensemble methods with custom feature engineering, real-time prediction capabilities, and comprehensive performance analysis on 5,574+ messages.</p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Python</span>
-                            <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">Naive Bayes</span>
-                            <span class="tech-tag">SVM</span>
-                            <span class="tech-tag">Random Forest</span>
-                            <span class="tech-tag">Logistic Regression</span>
-                            <span class="tech-tag">Feature Engineering</span>
-                        </div>
-                    </div>
-                </div>
-                
-
-                <div class="project-card fade-in">
+                <div class="project-card fade-in" data-color="#10b981">
+                    <div class="project-glow"></div>
+                    <div class="project-icon">🏛️</div>
                     <div class="project-header">
                         <h3>Museum Mobile App</h3>
-                        <p>Cross-platform museum visitor engagement solution</p>
+                        <p>Cross-platform visitor engagement</p>
                     </div>
                     <div class="project-content">
                         <p>Developed a Flutter-based mobile application for The Miners Hall Museum with dual-display functionality, QR code integration, and real-time content management.</p>
@@ -203,16 +323,17 @@
                             <span class="tech-tag">Flutter</span>
                             <span class="tech-tag">Cross-platform</span>
                             <span class="tech-tag">QR Integration</span>
-                            <span class="tech-tag">Backend Development</span>
-                            <span class="tech-tag">Frontend Development</span>
+                            <span class="tech-tag">Backend Dev</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card fade-in">
+                <div class="project-card fade-in" data-color="#3b82f6">
+                    <div class="project-glow"></div>
+                    <div class="project-icon">🧮</div>
                     <div class="project-header">
                         <h3>Income Tax Calculator</h3>
-                        <p>Full-stack web application for tax estimation</p>
+                        <p>Full-stack tax estimation app</p>
                     </div>
                     <div class="project-content">
                         <p>Built a comprehensive tax calculation system with database integration, supporting multiple visa status categories and featuring responsive design.</p>
@@ -220,12 +341,14 @@
                             <span class="tech-tag">HTML</span>
                             <span class="tech-tag">CSS</span>
                             <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Database Integration</span>
+                            <span class="tech-tag">Database</span>
                         </div>
                     </div>
                 </div>
 
-                <div class="project-card fade-in">
+                <div class="project-card fade-in" data-color="#8b5cf6">
+                    <div class="project-glow"></div>
+                    <div class="project-icon">🤖</div>
                     <div class="project-header">
                         <h3>EduBot Chatbot</h3>
                         <p>AI-powered student support system</p>
@@ -235,135 +358,149 @@
                         <div class="project-tech">
                             <span class="tech-tag">Python</span>
                             <span class="tech-tag">NLP</span>
-                            <span class="tech-tag">Database Integration</span>
+                            <span class="tech-tag">Database</span>
                             <span class="tech-tag">Automation</span>
                         </div>
                     </div>
                 </div>
 
-
-                <div class="project-card fade-in">
+                <div class="project-card fade-in" data-color="#06b6d4">
+                    <div class="project-glow"></div>
+                    <div class="project-icon">🗄️</div>
                     <div class="project-header">
-                        <h3>Machine Learning Database Optimization</h3>
-                        <p>Research project on database performance</p>
+                        <h3>ML Database Optimization</h3>
+                        <p>Research on database performance</p>
                     </div>
                     <div class="project-content">
                         <p>Conducted research on machine learning techniques for database optimization, applying statistical modeling to improve query performance and data insights.</p>
                         <div class="project-tech">
                             <span class="tech-tag">Machine Learning</span>
-                            <span class="tech-tag">Database Optimization</span>
+                            <span class="tech-tag">DB Optimization</span>
                             <span class="tech-tag">Statistical Modeling</span>
-                            <span class="tech-tag">Research</span>
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="experience">
+    <!-- ===== EXPERIENCE ===== -->
+    <section id="experience" class="section-bg">
         <div class="container">
-            <h2 class="fade-in">Experience & Leadership</h2> 
+            <h2 class="fade-in">Experience &amp; Leadership</h2>
             <div class="experience-timeline">
 
                 <div class="timeline-item fade-in">
-                    <h3>Website Development & Data Systems Intern</h3>
+                    <div class="tl-icon">🌐</div>
+                    <h3>Website Development &amp; Data Systems Intern</h3>
                     <div class="company">Rural Community Partners, Fort Scott, KS (Remote)</div>
-                    <div class="date">December 2025 - Present</div>
-                    <p>Built a responsive website using React, HTML, CSS, and JavaScript to collect and organize user data for services, donations, and events, implementing structured data forms and a content management layout for program pages and user interactions, while applying information systems concepts to design intuitive navigation and efficiently manage collected data, ultimately enhancing community engagement through easy-to-use forms and clear program and event displays.</p>
+                    <div class="date">December 2025 – Present</div>
+                    <p>Built a responsive website using React, HTML, CSS, and JavaScript to collect and organize user data for services, donations, and events. Designed intuitive navigation and efficient data management to enhance community engagement.</p>
                 </div>
 
                 <div class="timeline-item fade-in">
+                    <div class="tl-icon">🧖</div>
                     <h3>Website Development and Analytics Intern</h3>
                     <div class="company">BanyaHouse Mobile Sauna, Topeka, KS (Remote)</div>
-                    <div class="date">November 2025 - December 2025</div>
-                    <p>Designed and developed a 10-page SEO optimized website featuring online sauna booking, Google, Maps integration, and gift card management system. Also, enhanced user experience and search visibility through structured sitemap design, targeted keywords, and responsive web layout.</p>
+                    <div class="date">November 2025 – December 2025</div>
+                    <p>Designed and developed a 10-page SEO-optimized website featuring online booking, Google Maps integration, and a gift card management system.</p>
                 </div>
 
                 <div class="timeline-item fade-in">
-                    <h3>Advancement Ambassador of Pittsburg State University</h3>
+                    <div class="tl-icon">🏫</div>
+                    <h3>Advancement Ambassador</h3>
                     <div class="company">Pittsburg State University, Pittsburg, KS</div>
-                    <div class="date">August 2025 - Present</div>
+                    <div class="date">August 2025 – Present</div>
                     <p>Leading club initiatives and organizing events to promote data science education and practical applications among students.</p>
                 </div>
 
                 <div class="timeline-item fade-in">
+                    <div class="tl-icon">📈</div>
                     <h3>President, Data Analysis Club</h3>
                     <div class="company">Pittsburg State University, Pittsburg, KS</div>
-                    <div class="date">August 2025 - Present</div>
-                    <p>Leading the Data Analytics Club by organizing meetings, coordinating events, and guiding members  data-driven projects and competitions. Additionally, Collaborating with faculty and industry professionals to promote learning and networking opportunities.</p>
+                    <div class="date">August 2025 – Present</div>
+                    <p>Leading the Data Analytics Club by organizing meetings, coordinating events, and guiding members through data-driven projects and competitions. Collaborating with faculty and industry professionals to promote learning and networking.</p>
                 </div>
 
                 <div class="timeline-item fade-in">
-                    <h3>Data Science & Information Systems Tutor</h3>
+                    <div class="tl-icon">📚</div>
+                    <h3>Data Science &amp; Information Systems Tutor</h3>
                     <div class="company">Kelce College of Business, Pittsburg, KS</div>
-                    <div class="date">April 2025 - Present</div>
+                    <div class="date">April 2025 – Present</div>
                     <p>Mentoring students in programming languages and database management, collaborating with faculty to maintain academic standards and provide technical feedback.</p>
                 </div>
 
-
                 <div class="timeline-item fade-in">
-                    <h3>Student Clerical Assistant</h3>
-                    <div class="company">Yates Hall, Pittsburg, KS</div>
-                    <div class="date">July 2024 - Present</div>
-                    <p>Streamlined administrative workflows, database management tasks, and supported faculty with customer service and technology integration</p>
-                </div>
-
-                 <div class="timeline-item fade-in">
+                    <div class="tl-icon">📱</div>
                     <h3>Software Development Intern</h3>
                     <div class="company">The Miners Hall Museum, Franklin, Kansas (Remote)</div>
-                    <div class="date">March 2025 - August 2025</div>
-                    <p>Leading mobile app development using Flutter, implementing cross-platform solutions with QR code integration and backend infrastructure for visitor engagement.</p>
+                    <div class="date">March 2025 – August 2025</div>
+                    <p>Led mobile app development using Flutter, implementing cross-platform solutions with QR code integration and backend infrastructure for visitor engagement.</p>
                 </div>
 
                 <div class="timeline-item fade-in">
+                    <div class="tl-icon">🖥️</div>
                     <h3>Computer Lab Assistant</h3>
                     <div class="company">Yates Hall, Pittsburg, KS</div>
-                    <div class="date">January 2025 - August 2025</div>
+                    <div class="date">January 2025 – August 2025</div>
                     <p>Providing technical support across diverse computing environments, maintaining system functionality and minimizing downtime through efficient troubleshooting.</p>
                 </div>
 
                 <div class="timeline-item fade-in">
+                    <div class="tl-icon">📋</div>
+                    <h3>Student Clerical Assistant</h3>
+                    <div class="company">Yates Hall, Pittsburg, KS</div>
+                    <div class="date">July 2024 – Present</div>
+                    <p>Streamlined administrative workflows, database management tasks, and supported faculty with customer service and technology integration.</p>
+                </div>
+
+                <div class="timeline-item fade-in">
+                    <div class="tl-icon">🌍</div>
                     <h3>International Orientation Leader</h3>
                     <div class="company">Pittsburg State University, Pittsburg, KS</div>
-                    <div class="date">2023 - Present</div>
+                    <div class="date">2023 – Present</div>
                     <p>Guiding international students through university integration, leveraging multilingual abilities to support diverse student populations.</p>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section id="contact" class="section-bg">
-        <div class="container">
-            <h2 class="fade-in">Let's Connect</h2>
-            <div class="contact-content fade-in">
-                <p>I'm actively seeking internship opportunities and would love to discuss how my technical skills and passion for software development can contribute to your team.</p>
-                
-                <div class="contact-info">
-                    <div class="contact-item">
-                        <h3>Email</h3>
-                        <p>kry.ue59@gmail.com</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Phone</h3>
-                        <p>620-454-9484</p>
-                    </div>
-                    <div class="contact-item">
-                        <h3>Location</h3>
-                        <p>BAXTER SPRINGS, 66713, KANSAS</p>
-                    </div>
+    <!-- ===== CONTACT ===== -->
+<section id="contact">
+    <div class="container">
+        <h2 class="fade-in">Let's Connect</h2>
+        <div class="contact-content fade-in">
+            <p>I'm actively seeking internship opportunities and would love to discuss how my technical skills and passion for software development can contribute to your team.</p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-icon">✉️</div>
+                    <h3>Email</h3>
+                    <p>kry.ue59@gmail.com</p>
                 </div>
-
-                <div style="margin-top: 2rem;">
-                    <a href="mailto:kry.ue59@gmail.com" class="cta-button">Send Email</a>
+                <div class="contact-item">
+                    <div class="contact-icon">📞</div>
+                    <h3>Phone</h3>
+                    <p>620-454-9484</p>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-icon">📍</div>
+                    <h3>Location</h3>
+                    <p>Baxter Springs, KS 66713</p>
                 </div>
             </div>
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="mailto:kry.ue59@gmail.com" class="cta-button-dark">Send Email</a>
+                <a href="https://www.linkedin.com/in/you-e-kry-96897126b/" target="_blank" rel="noopener noreferrer" class="cta-button-dark">💼 LinkedIn</a>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 You E Kry. All rights reserved.</p>
+            <p>© 2025 You E Kry.</p>
         </div>
     </footer>
 
